@@ -89,7 +89,7 @@ header{
 [data-theme="light"] .moon{display:block}[data-theme="light"] .sun{display:none}
 [data-theme="dark"] .moon{display:none}[data-theme="dark"] .sun{display:block}
 @media(max-width:720px){.nav nav{gap:12px}.nav nav a{letter-spacing:.05em}}
-@media(max-width:560px){.brand span{display:none}}
+@media(max-width:560px){.brand span:not(.mark){display:none}}
 
 /* ---------- hero ---------- */
 .hero{padding:clamp(64px,10vw,140px) 0 clamp(48px,7vw,96px);border-bottom:1px solid var(--rule)}
