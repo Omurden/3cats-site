@@ -5,17 +5,17 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Press Kit — All Time High · 3Cats Studio</title>
 <meta name="description" content="Press &amp; creator kit for All Time High, a moral-descent finance thriller by 3Cats Studio. Fact sheet, copy blocks, screenshots — cleared for coverage.">
-<meta name="theme-color" content="#FBF9F5">
+<meta name="theme-color" content="#F6ECDA">
 <meta property="og:title" content="Press Kit — All Time High">
 <meta property="og:description" content="Press &amp; creator kit for All Time High, a moral-descent finance thriller by 3Cats Studio. Fact sheet, copy blocks, screenshots — cleared for coverage.">
 <meta property="og:type" content="website">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%23FBF9F5'/%3E%3Ccircle cx='10' cy='16' r='3.2' fill='%239FAEE5'/%3E%3Ccircle cx='16' cy='16' r='3.2' fill='%23E5A0B4'/%3E%3Ccircle cx='22' cy='16' r='3.2' fill='%23EFD08C'/%3E%3C/svg%3E">
 <style>
 /* ============================================================
-   "WHITE CUBE" (editorial / gallery)
+   "WHITE CUBE" (editorial / gallery) · "Seaside" palette (D-074)
    Magazine logic: big serif display, hairline rules, numbered
-   sections, generous whitespace. Pastel appears as art plates,
-   not wallpaper.
+   sections, generous whitespace. Terracotta / sea / sand appear
+   as art plates + the Wishlist control, not wallpaper.
    ============================================================ */
 :root{
   --serif:"Iowan Old Style","Palatino Linotype",Palatino,Georgia,serif;
@@ -30,21 +30,27 @@
 }
 [data-theme="light"]{
   color-scheme:light;
-  --paper:#FBF9F5; --paper-2:#F3F0E9; --ink:#211E19; --ink-2:#5C574E;
-  --rule:#D9D4C9;
-  --cat-a:#9FAEE5; --cat-b:#E5A0B4; --cat-c:#EFD08C;
-  --cat-a-deep:#3D4E9E; --cat-b-deep:#9E3D5C; --cat-c-deep:#7A5E14;
-  --plate-a:#E4E8F9; --plate-b:#F8E4EA; --plate-c:#FAF0D8;
-  --card:#FFFFFF; --shadow:0 1px 0 var(--rule);
+  /* "Beach Day" (D-074): warm cream canvas + sun-faded terracotta, with a marine-blue
+     counterpoint. Recolours D-068 White Cube's light theme; structure/type unchanged. */
+  --paper:#F6ECDA; --paper-2:#EFE1C8; --ink:#2C2019; --ink-2:#6B5B47;
+  --rule:#DCC9A4;
+  --cat-a:#5C8A9C; --cat-b:#BF4A2C; --cat-c:#E2D0A4;
+  --cat-a-deep:#356273; --cat-b-deep:#953619; --cat-c-deep:#7C6636;
+  --plate-a:#DCE6EA; --plate-b:#F1DBCC; --plate-c:#F1E7CF;
+  --card:#FFFDF7; --shadow:0 1px 0 var(--rule);
+  --btn:#BF4A2C; --btn-2:#356273; --btn-ink:#FBF4E6;
 }
 [data-theme="dark"]{
   color-scheme:dark;
-  --paper:#1C1A20; --paper-2:#242129; --ink:#F0EDE6; --ink-2:#ABA69B;
-  --rule:#3B3742;
-  --cat-a:#AEBBEF; --cat-b:#EFAFC1; --cat-c:#F2D89C;
-  --cat-a-deep:#C4CEF6; --cat-b-deep:#F4C2D0; --cat-c-deep:#F6E2B4;
-  --plate-a:#2A2C3E; --plate-b:#3A2A32; --plate-c:#38321F;
-  --card:#26232B; --shadow:0 1px 0 var(--rule);
+  /* "Dusk" (D-074): the Beach Day palette after sundown — warm espresso ground, the
+     terracotta lifted to coral and the sea to a pale sky so both accents read on dark. */
+  --paper:#241A16; --paper-2:#2E211B; --ink:#F3E7D3; --ink-2:#B49E82;
+  --rule:#42332A;
+  --cat-a:#84AEBD; --cat-b:#DE7150; --cat-c:#CBAD84;
+  --cat-a-deep:#A6C9D4; --cat-b-deep:#EC9770; --cat-c-deep:#E0C89A;
+  --plate-a:#26333A; --plate-b:#3A2A22; --plate-c:#33291E;
+  --card:#2C201A; --shadow:0 1px 0 var(--rule);
+  --btn:#B84A2B; --btn-2:#33627A; --btn-ink:#FBF4E6;
 }
 *{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
@@ -106,7 +112,7 @@ header{
 /* section chrome */
 section{padding:clamp(56px,8vw,104px) 0;border-bottom:1px solid var(--rule)}
 .sec-head{display:flex;align-items:baseline;gap:18px;margin-bottom:clamp(32px,5vw,56px)}
-.sec-head .num{font:400 var(--step-1)/1 var(--serif);font-style:italic;color:var(--ink-2)}
+.sec-head .num{font:400 var(--step-1)/1 var(--serif);font-style:italic;color:var(--cat-b-deep)}
 .sec-head h2{font:400 var(--step-3)/1.1 var(--serif);letter-spacing:-.01em}
 
 /* games */
@@ -123,9 +129,9 @@ section{padding:clamp(56px,8vw,104px) 0;border-bottom:1px solid var(--rule)}
 .game-facts{display:flex;gap:10px;flex-wrap:wrap}
 .chip{font:500 12px/1 var(--mono);letter-spacing:.06em;padding:7px 12px;border:1px solid var(--rule);border-radius:999px;color:var(--ink-2)}
 .cta-row{display:flex;gap:14px;align-items:center;flex-wrap:wrap;margin-top:auto;padding-top:8px}
-.btn{display:inline-flex;align-items:center;gap:10px;text-decoration:none;font:600 var(--step--1)/1 var(--sans);letter-spacing:.02em;background:var(--ink);color:var(--paper);padding:15px 26px;border:none;border-radius:999px;cursor:pointer;transition:transform .15s}
-.btn:hover{transform:translateY(-2px);color:var(--paper)}
-.btn .dot{width:8px;height:8px;border-radius:50%;background:var(--cat-c)}
+.btn{display:inline-flex;align-items:center;gap:10px;text-decoration:none;font:600 var(--step--1)/1 var(--sans);letter-spacing:.02em;background:var(--btn);color:var(--btn-ink);padding:15px 26px;border:none;border-radius:999px;cursor:pointer;transition:transform .15s}
+.btn:hover{transform:translateY(-2px);color:var(--btn-ink)}
+.btn .dot{width:8px;height:8px;border-radius:50%;background:var(--btn-ink)}
 .shelf{border:1px solid var(--rule);border-radius:6px;padding:clamp(22px,3vw,34px);display:flex;flex-direction:column;gap:18px;background:var(--paper-2)}
 .shelf-spines{display:flex;gap:8px;align-items:flex-end;height:110px}
 .shelf-spines b{flex:1;border-radius:3px 3px 0 0;display:block}
@@ -152,8 +158,8 @@ section{padding:clamp(56px,8vw,104px) 0;border-bottom:1px solid var(--rule)}
 .signup{display:flex;flex-wrap:wrap;gap:12px;align-items:flex-start}
 .signup input[type=email]{flex:1 1 220px;min-width:0;padding:14px 16px;border-radius:8px;border:1px solid var(--rule);background:var(--card);color:var(--ink);font:inherit}
 .signup input[type=email]:focus{outline:2px solid var(--cat-a-deep);outline-offset:1px}
-.signup button,.signup a.go{flex:0 0 auto;display:inline-flex;align-items:center;gap:.5em;text-decoration:none;font:600 var(--step--1)/1 var(--sans);letter-spacing:.02em;background:var(--ink);color:var(--paper);padding:15px 26px;border:none;border-radius:999px;cursor:pointer;transition:transform .15s}
-.signup button:hover,.signup a.go:hover{transform:translateY(-2px);color:var(--paper)}
+.signup button,.signup a.go{flex:0 0 auto;display:inline-flex;align-items:center;gap:.5em;text-decoration:none;font:600 var(--step--1)/1 var(--sans);letter-spacing:.02em;background:var(--btn-2);color:var(--btn-ink);padding:15px 26px;border:none;border-radius:999px;cursor:pointer;transition:transform .15s}
+.signup button:hover,.signup a.go:hover{transform:translateY(-2px);color:var(--btn-ink)}
 .signup .tiny{flex-basis:100%;font-size:12px;color:var(--ink-2);line-height:1.5;margin:0}
 .visually-hidden{position:absolute;width:1px;height:1px;margin:-1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
 
@@ -360,7 +366,6 @@ section[id]{scroll-margin-top:72px}
           <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor" aria-hidden="true"><path d="M16.6 2h-3.2v13.7a3 3 0 1 1-2.4-2.94V9.4a6.1 6.1 0 1 0 5.6 6.08V8.2a7.4 7.4 0 0 0 4.4 1.5V6.5a4.2 4.2 0 0 1-4.4-4.1V2Z"/></svg>
         </a>
       </div>
-    <a class="label" href="/privacy/" style="text-decoration:none">Privacy</a>
     <span class="label">3cats.studio</span>
     <small class="label">&copy; 2026 3Cats Studio</small>
   </div>
