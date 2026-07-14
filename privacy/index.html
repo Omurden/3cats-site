@@ -1,0 +1,359 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy — 3Cats Studio</title>
+<meta name="description" content="3Cats Studio privacy policy: what we collect (almost nothing), why, and your rights.">
+<meta name="theme-color" content="#FBF9F5">
+<meta property="og:title" content="Privacy Policy — 3Cats Studio">
+<meta property="og:description" content="3Cats Studio privacy policy: what we collect (almost nothing), why, and your rights.">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%23FBF9F5'/%3E%3Ccircle cx='10' cy='16' r='3.2' fill='%239FAEE5'/%3E%3Ccircle cx='16' cy='16' r='3.2' fill='%23E5A0B4'/%3E%3Ccircle cx='22' cy='16' r='3.2' fill='%23EFD08C'/%3E%3C/svg%3E">
+<style>
+/* ============================================================
+   "WHITE CUBE" (editorial / gallery)
+   Magazine logic: big serif display, hairline rules, numbered
+   sections, generous whitespace. Pastel appears as art plates,
+   not wallpaper.
+   ============================================================ */
+:root{
+  --serif:"Iowan Old Style","Palatino Linotype",Palatino,Georgia,serif;
+  --sans:system-ui,-apple-system,"Segoe UI",sans-serif;
+  --mono:ui-monospace,"SF Mono","Cascadia Mono",Menlo,monospace;
+  --step--1:clamp(.8rem,.78rem + .1vw,.875rem);
+  --step-0:clamp(1rem,.96rem + .2vw,1.125rem);
+  --step-1:clamp(1.25rem,1.15rem + .5vw,1.5rem);
+  --step-2:clamp(1.6rem,1.4rem + 1vw,2.1rem);
+  --step-3:clamp(2.2rem,1.8rem + 2vw,3.2rem);
+  --step-4:clamp(2.9rem,2rem + 4.5vw,5.6rem);
+}
+[data-theme="light"]{
+  color-scheme:light;
+  --paper:#FBF9F5; --paper-2:#F3F0E9; --ink:#211E19; --ink-2:#5C574E;
+  --rule:#D9D4C9;
+  --cat-a:#9FAEE5; --cat-b:#E5A0B4; --cat-c:#EFD08C;
+  --cat-a-deep:#3D4E9E; --cat-b-deep:#9E3D5C; --cat-c-deep:#7A5E14;
+  --plate-a:#E4E8F9; --plate-b:#F8E4EA; --plate-c:#FAF0D8;
+  --card:#FFFFFF; --shadow:0 1px 0 var(--rule);
+}
+[data-theme="dark"]{
+  color-scheme:dark;
+  --paper:#1C1A20; --paper-2:#242129; --ink:#F0EDE6; --ink-2:#ABA69B;
+  --rule:#3B3742;
+  --cat-a:#AEBBEF; --cat-b:#EFAFC1; --cat-c:#F2D89C;
+  --cat-a-deep:#C4CEF6; --cat-b-deep:#F4C2D0; --cat-c-deep:#F6E2B4;
+  --plate-a:#2A2C3E; --plate-b:#3A2A32; --plate-c:#38321F;
+  --card:#26232B; --shadow:0 1px 0 var(--rule);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{animation:none!important;transition:none!important}
+}
+body{
+  background:var(--paper);color:var(--ink);
+  font:400 var(--step-0)/1.6 var(--sans);
+  -webkit-font-smoothing:antialiased;overflow-x:hidden;
+}
+a{color:var(--ink);text-decoration-color:var(--cat-b);text-underline-offset:3px}
+a:hover{color:var(--cat-b-deep)}
+:focus-visible{outline:2px solid var(--cat-a-deep);outline-offset:3px;border-radius:2px}
+img{max-width:100%}
+.wrap{max-width:1160px;margin-inline:auto;padding-inline:clamp(20px,4vw,48px)}
+.label{font:500 var(--step--1)/1 var(--mono);letter-spacing:.14em;text-transform:uppercase;color:var(--ink-2)}
+.nowrap{white-space:nowrap}
+
+/* header */
+header{
+  position:sticky;top:0;z-index:50;background:color-mix(in oklab,var(--paper) 88%,transparent);
+  backdrop-filter:blur(10px);border-bottom:1px solid var(--rule);
+}
+.nav{display:flex;align-items:center;gap:24px;height:64px}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none;font:600 var(--step-0)/1 var(--serif);letter-spacing:.01em}
+.mark{display:flex;gap:5px}
+.mark i{width:11px;height:11px;border-radius:50%;display:block}
+.mark i:nth-child(1){background:var(--cat-a)}
+.mark i:nth-child(2){background:var(--cat-b)}
+.mark i:nth-child(3){background:var(--cat-c)}
+.nav nav{margin-left:auto;display:flex;gap:clamp(14px,2.5vw,30px)}
+.nav nav a{font:500 var(--step--1)/1 var(--mono);letter-spacing:.1em;text-transform:uppercase;text-decoration:none;color:var(--ink-2)}
+.nav nav a:hover{color:var(--ink)}
+#themeBtn{
+  border:1px solid var(--rule);background:var(--card);color:var(--ink);
+  width:38px;height:38px;border-radius:50%;cursor:pointer;font-size:15px;line-height:1;
+  display:grid;place-items:center;transition:transform .2s;
+}
+#themeBtn:hover{transform:rotate(20deg)}
+[data-theme="light"] .moon{display:block}[data-theme="light"] .sun{display:none}
+[data-theme="dark"] .moon{display:none}[data-theme="dark"] .sun{display:block}
+@media(max-width:720px){.nav nav{gap:12px}.nav nav a{letter-spacing:.05em}}
+@media(max-width:560px){.brand span:not(.mark){display:none}}
+
+/* hero */
+.hero{padding:clamp(64px,10vw,140px) 0 clamp(48px,7vw,96px);border-bottom:1px solid var(--rule)}
+.hero h1{font:400 var(--step-4)/1.06 var(--serif);letter-spacing:-.015em;max-width:15ch;text-wrap:balance}
+.hero h1 em{font-style:italic;color:var(--cat-b-deep)}
+.hero .lede{margin-top:28px;max-width:52ch;font-size:var(--step-1);line-height:1.5;color:var(--ink-2);text-wrap:pretty}
+.hero-meta{margin-top:40px;display:flex;gap:28px;flex-wrap:wrap;align-items:center}
+.hero-dots{display:flex;gap:8px}
+.hero-dots i{width:16px;height:16px;border-radius:50%}
+.hero-dots i:nth-child(1){background:var(--cat-a)}
+.hero-dots i:nth-child(2){background:var(--cat-b)}
+.hero-dots i:nth-child(3){background:var(--cat-c)}
+
+/* section chrome */
+section{padding:clamp(56px,8vw,104px) 0;border-bottom:1px solid var(--rule)}
+.sec-head{display:flex;align-items:baseline;gap:18px;margin-bottom:clamp(32px,5vw,56px)}
+.sec-head .num{font:400 var(--step-1)/1 var(--serif);font-style:italic;color:var(--ink-2)}
+.sec-head h2{font:400 var(--step-3)/1.1 var(--serif);letter-spacing:-.01em}
+
+/* games */
+.game-grid{display:grid;grid-template-columns:1.6fr 1fr;gap:clamp(20px,3vw,36px)}
+@media(max-width:860px){.game-grid{grid-template-columns:1fr}}
+.game-card{background:var(--card);border:1px solid var(--rule);border-radius:6px;overflow:hidden;display:flex;flex-direction:column}
+.game-art{aspect-ratio:16/8.5;background:var(--paper-2);border-bottom:1px solid var(--rule);position:relative;overflow:hidden}
+.game-art img{width:100%;height:100%;object-fit:cover;display:block}
+.game-body{padding:clamp(22px,3vw,34px);display:flex;flex-direction:column;gap:16px;flex:1}
+.game-kicker{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+.game-body h3{font:400 var(--step-2)/1.1 var(--serif)}
+.game-body .logline{font:italic 400 var(--step-1)/1.4 var(--serif);color:var(--ink-2);text-wrap:pretty}
+.game-body p{color:var(--ink-2);text-wrap:pretty}
+.game-facts{display:flex;gap:10px;flex-wrap:wrap}
+.chip{font:500 12px/1 var(--mono);letter-spacing:.06em;padding:7px 12px;border:1px solid var(--rule);border-radius:999px;color:var(--ink-2)}
+.cta-row{display:flex;gap:14px;align-items:center;flex-wrap:wrap;margin-top:auto;padding-top:8px}
+.btn{display:inline-flex;align-items:center;gap:10px;text-decoration:none;font:600 var(--step--1)/1 var(--sans);letter-spacing:.02em;background:var(--ink);color:var(--paper);padding:15px 26px;border:none;border-radius:999px;cursor:pointer;transition:transform .15s}
+.btn:hover{transform:translateY(-2px);color:var(--paper)}
+.btn .dot{width:8px;height:8px;border-radius:50%;background:var(--cat-c)}
+.shelf{border:1px solid var(--rule);border-radius:6px;padding:clamp(22px,3vw,34px);display:flex;flex-direction:column;gap:18px;background:var(--paper-2)}
+.shelf-spines{display:flex;gap:8px;align-items:flex-end;height:110px}
+.shelf-spines b{flex:1;border-radius:3px 3px 0 0;display:block}
+.shelf h3{font:400 var(--step-2)/1.15 var(--serif)}
+.shelf p{color:var(--ink-2);text-wrap:pretty}
+
+/* studio */
+.studio-grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(28px,5vw,72px);align-items:start}
+@media(max-width:860px){.studio-grid{grid-template-columns:1fr}}
+.studio-grid .big{font:400 var(--step-2)/1.35 var(--serif);text-wrap:pretty}
+.studio-grid .big em{font-style:italic;color:var(--cat-a-deep)}
+.craft{display:flex;flex-direction:column;gap:0;border-top:1px solid var(--rule)}
+.craft > div{padding:20px 0;border-bottom:1px solid var(--rule);display:grid;grid-template-columns:44px 1fr;gap:16px;align-items:baseline}
+.craft .label{padding-top:4px}
+.craft h4{font:600 var(--step-0)/1.3 var(--sans);margin-bottom:6px}
+.craft p{color:var(--ink-2);font-size:var(--step--1);line-height:1.55;text-wrap:pretty}
+
+/* newsletter */
+.news-grid{display:grid;grid-template-columns:1fr;gap:22px}
+@media(min-width:800px){.news-grid{grid-template-columns:1fr 1fr;align-items:start}}
+.news-grid .big{font:400 var(--step-2)/1.35 var(--serif);text-wrap:pretty}
+.news-grid .big em{font-style:italic;color:var(--cat-b-deep)}
+.news-grid .sub{color:var(--ink-2);max-width:44ch;margin-bottom:18px;text-wrap:pretty}
+.signup{display:flex;flex-wrap:wrap;gap:12px;align-items:flex-start}
+.signup input[type=email]{flex:1 1 220px;min-width:0;padding:14px 16px;border-radius:8px;border:1px solid var(--rule);background:var(--card);color:var(--ink);font:inherit}
+.signup input[type=email]:focus{outline:2px solid var(--cat-a-deep);outline-offset:1px}
+.signup button,.signup a.go{flex:0 0 auto;display:inline-flex;align-items:center;gap:.5em;text-decoration:none;font:600 var(--step--1)/1 var(--sans);letter-spacing:.02em;background:var(--ink);color:var(--paper);padding:15px 26px;border:none;border-radius:999px;cursor:pointer;transition:transform .15s}
+.signup button:hover,.signup a.go:hover{transform:translateY(-2px);color:var(--paper)}
+.signup .tiny{flex-basis:100%;font-size:12px;color:var(--ink-2);line-height:1.5;margin:0}
+.visually-hidden{position:absolute;width:1px;height:1px;margin:-1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+
+/* contact */
+.contact-inner{display:flex;flex-direction:column;gap:20px;align-items:flex-start}
+.contact-inner .mailto{font:400 var(--step-3)/1.1 var(--serif);text-decoration:none;border-bottom:2px solid var(--cat-b);word-break:break-all}
+.contact-inner .mailto:hover{border-bottom-color:var(--cat-a);color:var(--ink)}
+
+/* footer */
+footer{padding:40px 0 56px}
+.foot{display:flex;gap:24px;flex-wrap:wrap;align-items:center;justify-content:space-between}
+.foot small,.foot .label{font-size:12px}
+.disclosure{margin-top:16px;font-size:12px;color:var(--ink-2);max-width:66ch;line-height:1.6}
+
+/* social links */
+.social{display:flex;align-items:center;gap:14px}
+.social .social-label{font:500 var(--step--1)/1 var(--mono);letter-spacing:.1em;color:var(--ink-2)}
+.social a{color:var(--ink-2);display:inline-flex;align-items:center;justify-content:center;transition:color .15s ease,transform .15s ease}
+.social a:hover{color:var(--cat-b-deep);transform:translateY(-1px)}
+
+.fade{opacity:0;transform:translateY(14px);animation:rise .8s cubic-bezier(.2,.7,.2,1) forwards}
+.fade.d1{animation-delay:.08s}.fade.d2{animation-delay:.16s}.fade.d3{animation-delay:.24s}
+@keyframes rise{to{opacity:1;transform:none}}
+@media (prefers-reduced-motion: reduce){.fade{animation:none;opacity:1;transform:none}}
+
+/* ---- press page ---- */
+main{counter-reset:sec}
+section[id]{scroll-margin-top:72px}
+.backlink{display:inline-flex;align-items:center;gap:.5em;font:500 var(--step--1)/1 var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--ink-2);text-decoration:none;margin-bottom:26px}
+.backlink:hover{color:var(--ink)}
+.eyebrow{font:500 var(--step--1)/1 var(--mono);letter-spacing:.14em;text-transform:uppercase;color:var(--ink-2)}
+.press-hero{padding:clamp(40px,7vw,88px) 0 clamp(28px,5vw,56px);border-bottom:1px solid var(--rule)}
+.press-hero .eyebrow{display:block;margin-bottom:16px}
+.press-hero h1{font:400 var(--step-4)/1.06 var(--serif);letter-spacing:-.015em;max-width:16ch;text-wrap:balance}
+.press-hero .lede{margin-top:24px;max-width:58ch;font-size:var(--step-1);line-height:1.5;color:var(--ink-2);text-wrap:pretty}
+.pressband{margin-top:clamp(28px,5vw,48px);border:1px solid var(--rule);border-radius:6px;overflow:hidden;aspect-ratio:1600/620;background:var(--paper-2)}
+.pressband img{width:100%;height:100%;object-fit:cover;display:block}
+.sechead{display:flex;align-items:baseline;gap:16px;margin-bottom:clamp(28px,4vw,44px)}
+.sechead h2{font:400 var(--step-3)/1.1 var(--serif);letter-spacing:-.01em}
+.sechead h2::before{counter-increment:sec;content:"0" counter(sec) "\2002";font-style:italic;color:var(--ink-2);font-size:.68em}
+.sechead .note{margin-left:auto;align-self:center;font:500 var(--step--1)/1 var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--ink-2)}
+.spec{border:1px solid var(--rule);border-radius:6px;overflow:hidden;background:var(--card)}
+.spec .row{display:grid;grid-template-columns:1fr;gap:4px;padding:15px clamp(16px,2.4vw,24px);border-top:1px solid var(--rule)}
+.spec .row:first-child{border-top:none}
+@media(min-width:620px){.spec .row{grid-template-columns:210px 1fr;gap:24px;align-items:baseline}}
+.spec .k{font:500 var(--step--1)/1.4 var(--mono);letter-spacing:.1em;text-transform:uppercase;color:var(--ink-2)}
+.spec .v{color:var(--ink)}
+.spec .v a{color:var(--ink);text-decoration:none;border-bottom:1px solid var(--cat-b)}
+.spec .v a:hover{color:var(--cat-b-deep)}
+.copy-grid{display:grid;grid-template-columns:1fr;gap:18px}
+.cblock{background:var(--card);border:1px solid var(--rule);border-radius:6px;padding:clamp(20px,3vw,30px)}
+.cblock .k{display:block;font:500 var(--step--1)/1 var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--ink-2);margin-bottom:14px}
+.cblock p{color:var(--ink-2);text-wrap:pretty}
+.cblock p + p{margin-top:14px}
+.cblock.hook{border-left:3px solid var(--cat-b)}
+.cblock .oneliner{font:italic 400 var(--step-2)/1.3 var(--serif);color:var(--ink);text-wrap:balance}
+.featlist{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:12px}
+.featlist li{position:relative;padding-left:24px;color:var(--ink-2);text-wrap:pretty}
+.featlist li::before{content:"\25B8";position:absolute;left:0;top:.05em;color:var(--cat-b-deep)}
+.featlist li b{color:var(--ink);font-weight:600}
+.pgallery{display:grid;grid-template-columns:1fr;gap:12px}
+@media(min-width:640px){.pgallery{grid-template-columns:repeat(3,1fr)}}
+.pgallery img{width:100%;height:100%;object-fit:cover;aspect-ratio:16/10;border:1px solid var(--rule);border-radius:6px;display:block;background:var(--paper-2)}
+.assetnote{margin-top:18px;color:var(--ink-2);font-size:var(--step--1);max-width:64ch;line-height:1.6}
+.assetnote a{color:var(--ink);text-decoration:none;border-bottom:1px solid var(--cat-b)}
+.credo{font:500 var(--step--1)/1.7 var(--mono);letter-spacing:.02em;color:var(--ink-2);border-left:3px solid var(--cat-c);padding-left:14px}
+.contact{display:flex;flex-direction:column;gap:18px;align-items:flex-start}
+.contact .big{font:400 var(--step-3)/1.1 var(--serif);letter-spacing:-.01em}
+.contact a.mail{font:400 var(--step-3)/1.1 var(--serif);text-decoration:none;border-bottom:2px solid var(--cat-b);word-break:break-all}
+.contact a.mail:hover{border-bottom-color:var(--cat-a)}</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="/" aria-label="3Cats Studio home"><span class="mark" aria-hidden="true"><i></i><i></i><i></i></span><span>3Cats Studio</span></a>
+    <nav aria-label="Primary">
+      <a href="/#games">Games</a>
+      <a href="/#studio">Studio</a>
+      <a href="/press/">Press</a>
+      <a href="/#contact">Contact</a>
+    </nav>
+    <button id="themeBtn" aria-label="Toggle light or dark theme"><span class="moon" aria-hidden="true">&#9680;</span><span class="sun" aria-hidden="true">&#9681;</span></button>
+  </div>
+</header>
+
+<main id="top">
+  <section class="press-hero">
+    <div class="wrap">
+      <a class="backlink fade" href="/">&larr; 3Cats Studio</a>
+      <p class="eyebrow fade">Legal</p>
+      <h1 class="fade d1">Privacy policy.</h1>
+      <p class="lede fade d2">Plain-language version: we don&rsquo;t collect much, because we don&rsquo;t need to. Last updated July 14, 2026.</p>
+    </div>
+  </section>
+
+  <section class="block" id="summary">
+    <div class="wrap">
+      <div class="sechead"><h2>Summary</h2><span class="note">tl;dr</span></div>
+      <div class="cblock hook">
+        <p>3Cats Studio (&ldquo;we&rdquo;) makes single-player, offline story games. Our games do not require an account, do not include ads, and do not collect or sell personal data. The only place we knowingly collect any personal information is if you voluntarily give it to us &mdash; by subscribing to our launch newsletter or by emailing us.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="block" id="what-we-collect">
+    <div class="wrap">
+      <div class="sechead"><h2>What we collect</h2><span class="note">and why</span></div>
+      <div class="copy-grid">
+        <div class="cblock">
+          <span class="k">Newsletter signup</span>
+          <p>If you submit your email address through the &ldquo;Get launch emails&rdquo; form on this site, we store it with our email provider, Buttondown, solely to send you launch and demo announcements. We don&rsquo;t send anything else, and you can unsubscribe at any time via the link in every email or by writing to us.</p>
+        </div>
+        <div class="cblock">
+          <span class="k">Email correspondence</span>
+          <p>If you email <a href="mailto:info@3cats.studio">info@3cats.studio</a> (press, support, or just to say hi), we keep that email and your address to reply to you. We don&rsquo;t add it to any marketing list unless you separately opt in via the newsletter form.</p>
+        </div>
+        <div class="cblock">
+          <span class="k">Our games themselves</span>
+          <p>Our games run fully offline and single-player. They do not require sign-in, do not include third-party analytics or advertising SDKs, and do not transmit gameplay data anywhere. Save data is stored locally on your device (and, where the platform offers it, in that platform&rsquo;s own cloud-save service &mdash; e.g. Steam Cloud &mdash; which is governed by that platform&rsquo;s own privacy policy, not ours).</p>
+        </div>
+        <div class="cblock">
+          <span class="k">Store platforms (Steam, Apple App Store, Google Play)</span>
+          <p>When you install or purchase our games through a storefront, that storefront (Valve, Apple, or Google) processes your payment and account information under its own privacy policy &mdash; we never see your payment details, and the storefront may separately collect its own platform-level analytics that are outside our control.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="block" id="children">
+    <div class="wrap">
+      <div class="sechead"><h2>Children&rsquo;s privacy</h2><span class="note">COPPA / GDPR-K</span></div>
+      <div class="cblock">
+        <p>Our games and this site are not directed at children under 13, and we do not knowingly collect personal information from children under 13. If you believe a child has provided us personal information (e.g. via the newsletter form), contact us at <a href="mailto:info@3cats.studio">info@3cats.studio</a> and we will delete it.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="block" id="rights">
+    <div class="wrap">
+      <div class="sechead"><h2>Your rights</h2><span class="note">access, deletion, questions</span></div>
+      <div class="cblock">
+        <p>We&rsquo;re based in the Netherlands (EU). Wherever you are, you can ask us at any time what we hold about you, ask us to correct or delete it, or ask us to stop contacting you &mdash; email <a href="mailto:info@3cats.studio">info@3cats.studio</a> and we&rsquo;ll handle it directly (there&rsquo;s so little data that this is a same-day, human reply, not a form).</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="block" id="changes">
+    <div class="wrap">
+      <div class="sechead"><h2>Changes to this policy</h2><span class="note">&nbsp;</span></div>
+      <div class="cblock">
+        <p>If this policy changes &mdash; for example, if a future game adds an optional online feature &mdash; we&rsquo;ll update this page and the &ldquo;last updated&rdquo; date above.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="block" id="contact">
+    <div class="wrap contact">
+      <span class="big">Questions?</span>
+      <a class="mail" href="mailto:info@3cats.studio">info@3cats.studio</a>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap foot">
+    <a class="brand" href="/" aria-label="3Cats Studio home"><span class="mark" aria-hidden="true"><i></i><i></i><i></i></span><span>3Cats Studio</span></a>
+    <div class="social">
+        <span class="social-label">@3catsgames</span>
+        <a href="https://x.com/3catsgames" target="_blank" rel="noopener noreferrer" aria-label="3Cats Studio on X">
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor" aria-hidden="true"><path d="M18.9 2H22l-7.6 8.7L23.3 22h-7.1l-5.5-7.2L4.3 22H1.2l8.1-9.3L1 2h7.3l5 6.6L18.9 2Zm-1.2 18h1.9L6.4 4H4.4l13.3 16Z"/></svg>
+        </a>
+        <a href="https://instagram.com/3catsgames" target="_blank" rel="noopener noreferrer" aria-label="3Cats Studio on Instagram">
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.2" cy="6.8" r="1.1" fill="currentColor" stroke="none"/></svg>
+        </a>
+        <a href="https://www.tiktok.com/@3catsgames" target="_blank" rel="noopener noreferrer" aria-label="3Cats Studio on TikTok">
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor" aria-hidden="true"><path d="M16.6 2h-3.2v13.7a3 3 0 1 1-2.4-2.94V9.4a6.1 6.1 0 1 0 5.6 6.08V8.2a7.4 7.4 0 0 0 4.4 1.5V6.5a4.2 4.2 0 0 1-4.4-4.1V2Z"/></svg>
+        </a>
+      </div>
+    <a class="label" href="/privacy/" style="text-decoration:none" aria-current="page">Privacy</a>
+    <span class="label">3cats.studio</span>
+    <small class="label">&copy; 2026 3Cats Studio</small>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var root=document.documentElement,KEY="3cats-theme";
+  try{
+    var saved=localStorage.getItem(KEY);
+    if(saved==="light"||saved==="dark"){root.dataset.theme=saved;}
+    /* default is always light; dark is opt-in via the toggle */
+  }catch(e){}
+  document.getElementById("themeBtn").addEventListener("click",function(){
+    var next=root.dataset.theme==="dark"?"light":"dark";
+    root.dataset.theme=next;
+    try{localStorage.setItem(KEY,next);}catch(e){}
+  });
+})();
+</script>
+
+</body>
+</html>
