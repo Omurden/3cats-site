@@ -179,6 +179,10 @@ footer{padding:40px 0 56px}
 .social .social-label{font:500 var(--step--1)/1 var(--mono);letter-spacing:.1em;color:var(--ink-2)}
 .social a{color:var(--ink-2);display:inline-flex;align-items:center;justify-content:center;transition:color .15s ease,transform .15s ease}
 .social a:hover{color:var(--cat-b-deep);transform:translateY(-1px)}
+/* header variant: compact icons, hairline-separated from the nav, hidden on narrow screens */
+.social--head{gap:13px;padding-left:20px;border-left:1px solid var(--rule)}
+.social--head a svg{width:15px;height:15px}
+@media(max-width:720px){.social--head{display:none}}
 
 .fade{opacity:0;transform:translateY(14px);animation:rise .8s cubic-bezier(.2,.7,.2,1) forwards}
 .fade.d1{animation-delay:.08s}.fade.d2{animation-delay:.16s}.fade.d3{animation-delay:.24s}
@@ -242,6 +246,17 @@ section[id]{scroll-margin-top:72px}
       <a href="/press/">Press</a>
       <a href="/#contact">Contact</a>
     </nav>
+    <div class="social social--head">
+        <a href="https://x.com/3catsgames" target="_blank" rel="noopener noreferrer" aria-label="3Cats Studio on X">
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor" aria-hidden="true"><path d="M18.9 2H22l-7.6 8.7L23.3 22h-7.1l-5.5-7.2L4.3 22H1.2l8.1-9.3L1 2h7.3l5 6.6L18.9 2Zm-1.2 18h1.9L6.4 4H4.4l13.3 16Z"/></svg>
+        </a>
+        <a href="https://instagram.com/3catsgames" target="_blank" rel="noopener noreferrer" aria-label="3Cats Studio on Instagram">
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.2" cy="6.8" r="1.1" fill="currentColor" stroke="none"/></svg>
+        </a>
+        <a href="https://www.tiktok.com/@3catsgames" target="_blank" rel="noopener noreferrer" aria-label="3Cats Studio on TikTok">
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor" aria-hidden="true"><path d="M16.6 2h-3.2v13.7a3 3 0 1 1-2.4-2.94V9.4a6.1 6.1 0 1 0 5.6 6.08V8.2a7.4 7.4 0 0 0 4.4 1.5V6.5a4.2 4.2 0 0 1-4.4-4.1V2Z"/></svg>
+        </a>
+      </div>
     <button id="themeBtn" aria-label="Toggle light or dark theme"><span class="moon" aria-hidden="true">&#9680;</span><span class="sun" aria-hidden="true">&#9681;</span></button>
   </div>
 </header>
